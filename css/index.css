@@ -1,0 +1,165 @@
+/* ourServices */
+.ourServices{
+  padding: 50px 0px;
+  background-color: var(--background);
+}
+.h1{
+  font-size: 35px;
+  text-align: center;
+  color: var(--black);
+  font-weight: 400;
+}
+.ourServices .card{
+  position: relative;
+  left: 0;
+  top: 0;
+  text-align: center;
+  margin: 30px;
+  overflow: hidden;
+}
+.card:hover .cardImg{
+  transform: scale(1.3);
+}
+.cardImg{
+  transition: 0.7s;
+}
+.cardImg img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.cardImg::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text p{
+  font-size: 30px;
+  color: var(--white);
+} 
+
+
+/* /ourServices */
+
+/* bestRooms */
+.bestRooms{
+  position: relative;
+  padding: 50px 0px;
+  background-color: var(--brown2);
+}
+.bestRooms .h1{
+  color: var(--white);
+  padding: 10px 0px;
+}
+.bestRooms .card{
+  border-radius: 25px;
+  margin: 0px 30px;
+  background-color: #BBBBBB;
+}
+.image-content, .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 15px;
+}
+.image-content{
+  position: relative;
+}
+.card-image .card-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.title{
+  font-size: 18px;
+  color: #292525;
+  font-weight: 600;
+}
+.subtitle{
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: #333;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 6px;
+  margin: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.button:hover{
+  background-color: #FF4D00;
+  color: #fff;
+}
+.slider{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.slider-examples{
+  width: 400%;
+  display: flex;
+  transition: transform 1s linear;
+}
+.slider-examples .parent{
+  flex-wrap: nowrap;
+}
+.slider-box{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.slider-controller{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+}
+.slider-controller > div{
+  padding: 10px 20px;
+  background-color: #FF4D00;
+  margin: 0px 10px;
+}
+.slider-controller i{
+  font-size: 35px;
+}
+
+/* /bestRooms */
+
+/* photogallery */
+.photogallery{
+  position: relative;
+  padding: 50px 0px;
+  background-color: var(--background3);
+}
+.photogallery .h1{
+  color: var(--white);
+}
+/* /photogallery */
+
+/* map */
+.map iframe{
+  width: 100%;
+}
+/* /map */
+
+
+
+
